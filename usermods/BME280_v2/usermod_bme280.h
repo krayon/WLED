@@ -431,7 +431,7 @@ public:
 
     JsonObject top = root[FPSTR(_name)];
     if (top.isNull()) {
-      DEBUG_PRINT(F(_name));
+      DEBUG_PRINT(FPSTR(_name));
       DEBUG_PRINTLN(F(": No config found. (Using defaults.)"));
       return false;
     }
