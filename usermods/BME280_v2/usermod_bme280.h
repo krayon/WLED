@@ -13,6 +13,10 @@
 #include <BME280I2C.h>               // BME280 sensor
 #include <EnvironmentCalculations.h> // BME280 extended measurements
 
+#define DEBUG_PRINT(x) Serial.print(x)
+#define DEBUG_PRINTLN(x) Serial.println(x)
+#define DEBUG_PRINTF(x...) Serial.printf(x)
+
 class UsermodBME280 : public Usermod
 {
 private:
